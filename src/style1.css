@@ -1,0 +1,178 @@
+body{
+    margin:0;
+    padding:0;
+    font-family: "Gloria Hallelujah";
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.5;
+    /* text-align: justify; */
+}
+#navbar{
+    padding:8px;
+    margin: 0px;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: "Amatic SC";
+    font-weight: 900;
+    font-style: normal;
+    text-transform: uppercase;
+    /* text-decoration: underline; */
+}
+#logo{
+    height:50px;
+    width:100px;
+}
+h1{
+    font-size: 3rem; /* 3 time reltive to that defined in the body*/
+    text-align:center;
+    color:darkblue;
+}
+h2{
+    text-align:center;
+    /* color:darkblue; */
+}
+#banner{
+    width:100%;
+    object-fit: cover;
+
+}
+.location{
+    color:grey
+}
+#about{
+    display: flex;
+    max-width: 800px;
+    margin: 0 auto;
+
+}
+#description{
+    width:auto;
+    background-color: aliceblue;
+    padding: 8px;
+    padding-right: 8px;
+}
+#team{
+    width:auto;
+    background-color: antiquewhite;
+
+}
+#teamimage{
+    border-radius: 5px;
+}
+#jobs{
+    padding: 0 8px;
+    margin: 0 auto;
+    max-width: 800px;
+}
+h3{
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+.apply{
+    float: right;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    color:#3B82F6
+}
+#footer{
+    background-color: ghostwhite;
+    margin-top: 20px;
+    
+}
+#footerlinks{
+    list-style:none;
+    text-align: center;
+    
+}
+/* margins and paddings do not apply to span change them to div */
+/* another way of showing div side by side */
+#footerlinks li{
+    display: inline;
+    padding: 10px;
+}
+/* mailto 
+
+thsi is something when you click on apply it opens your gmail and put that in subject in mail */
+#jobtable{
+    width:100%;
+    border: 1px solid gray;
+    border-collapse: collapse;
+    
+
+}
+.job-header-row th {
+    border: 1px solid gray;
+    padding: 8px;
+    background-color: rgb(165, 243, 252);
+    text-align: center;
+}
+
+
+
+
+.job-data-row td {
+    /* border: 1px solid gray; */
+    padding: 8px;
+    border-right: 1px solid gray;
+    
+}
+
+#jobtable tr:nth-child(odd){
+    background-color: rgb(220, 252, 231);
+}
+#application{
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 8px;
+}
+#applicationform div{
+    margin: 16px;
+}
+#applicationform label{
+    font-weight: 600;
+   
+    
+}
+#applicationform input{
+    padding: 4px;
+    font-size: 1.25rem;
+    margin-top: 4px;
+    border-radius: 5px;
+    border: 2px solid gray;
+}
+#dropdown{
+    padding: 4px;
+    font-size: 1.25rem;
+    margin-top: 4px;
+    border-radius: 5px;
+    border: 2px solid gray;
+}
+
+.form-group textarea{
+    width: 100%;
+    padding: 4px;
+    font-size: 1.25rem;
+    margin-top: 4px;
+    border-radius: 5px;
+    border: 2px solid gray;
+
+}
+.form-group input[type="checkbox"]{
+    width: 16px;
+    height: 16px;
+}
+.form-group input[type="submit"]{
+    padding: 4px;
+    font-size: 1.25rem;
+    margin-top: 4px;
+    border-radius: 5px;
+    color: white;
+    background-color:#2563EB;
+    border-collapse: collapse;
+    cursor:pointer
+    
+
+}

@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>
+        MY FIRST WEBPAGE
+    </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Edu+AU+VIC+WA+NT+Dots:wght@400..700&family=Gloria+Hallelujah&family=Pacifico&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style1.css">
+
+</head>
+
+<body>
+    <div id="navbar">
+        <img id="logo" alt="logo"
+            src="https://media.istockphoto.com/id/1345681613/vector/creative-people-logo-vector-illustration-design-editable-resizable-eps-10.jpg?s=612x612&w=0&k=20&c=9XUHICA1ljbxBcLw8ERp0kDDxLNQ8Bp2yR4aUSS6SBs=">
+    </div>
+
+    <img id="banner" src="1.jpg" alt="banner" height="360">
+    <h1>About jovian</h1>
+    <div id="about">
+        <div id="description">
+            description
+            <p style="margin-top: 0;">
+                <!-- you can also use div and span tag here -->
+                At Jovian, we're on a mission to build
+                the world's most <span >highly</span> reputed technical
+                university, and we're building it completely
+                online. We offer several beginner friendly
+                courses that are taken by <b>300000+</b> registered
+                users.
+            </p>
+        </div>
+        <div id="team">
+            team
+            <img id="teamimage" src="2.jpg" alt="banner" height="360">
+
+        </div>
+    </div>
+    </div>
+
+
+
+    <ol>
+        <li>
+            <a href="https://jovian.com/sydney/html-and-css-basics"
+                target="_blank"><!--by putting target it will open it in new tab-->
+                full stack developer bootcamp
+            </a>
+        </li>
+        <li>
+            <a href="https://jovian.com/sydney/html-and-css-basics">
+                data science bootcamp
+            </a>
+        </li>
+    </ol>
+    </p>
+
+    <div>
+        <h2>job oppurtinities</h2>
+    </div>
+
+    <div id="jobs">
+        <!-- <div>
+            <a href="mailto:support@jovian.com? subject=frontend" target="_blank" class="apply">apply</a>
+            <h3>frontend developer</h3>
+            <div class="location">bengaluru,india</div>
+        </div>
+        <div>
+            <a href="mailto:support@jovian.com? subject=backend" target="_blank" class="apply">apply</a>
+
+            <h3>backend developer</h3>
+            <div class="location">delhi,india</div>
+        </div>
+        <div>
+            <a href="mailto:support@jovian.com? subject=fullstack" target="_blank" class="apply">apply</a>
+
+            <h3>fullstack developer</h3>
+            <div class="location">mumbai,india</div>
+        </div> -->
+        <table id="jobtable">
+            <tr class="job-header-row">
+                <th rowspan="2">job title</th>
+                <th colspan="2">location</th>
+                <th rowspan="2">salary in ₹</th>
+                <th rowspan="2">posted on</th>
+            </tr>
+            <tr class="job-header-row">
+                <th>city</th>
+                <th>country</th>
+            </tr>
+            <tr class="job-data-row">
+                <td>frontend developer</td>
+                <td>bengaluru
+                <td>india</td>
+                </td>
+                <td>12000000</td>
+                <td>mar,3,2024</td>
+            </tr>
+            <tr class="job-data-row">
+                <td>backend developer</td>
+                <td>new delhi
+                <td>india</td>
+                </td>
+                <td>15000000</td>
+                <td>mar,30,2024</td>
+            </tr>
+            <tr class="job-data-row">
+                <td>data scientist</td>
+                <td>san fransico
+                <td>usa</td>
+                </td>
+                <td>150000000</td>
+                <td>apr,30,2024</td>
+            </tr>
+            <tr class="job-data-row">
+                <td>ml engineer</td>
+                <td colspan="2" style=" text-align: center;">remote</td>
+                <td>10000000</td>
+                <td>sep,15,2024</td>
+            </tr>
+        </table>
+        <div id="application">
+            <h2>submit your application</h2>
+            <form id="applicationform" action="">
+                <div>
+                    <label for="name">Name</label><br><!--used for new line br tag-->
+                    <input type="text" id="name" name="name" required placeholder="joe">
+                </div>
+                <div>
+                    <label for="email">Email address</label><br>
+                    <input type="text" id="email" name="email" required placeholder="joe@gmail.com">
+                </div>
+                <div>
+                    <label for="phone">Phone number</label><br>
+                    <input type="number" id="phone" name="phone" required placeholder="9999999999">
+                </div>
+                <div>
+                    <label for="dob">Date of birth</label><br>
+                    <input type="date" id="dob" name="dob" required placeholder="9999999999">
+                </div>
+                <div>
+                    <label for="position">Position applied for</label><br>
+                    <select id="dropdown" name="position" required>
+                        <option value="" frontend-developer> frontend developer</option>
+                        <option value="" backendtend-developer> backend developer</option>
+                        <option value="" data scientist> data scientist developer</option>
+                        <option value=nd-developer> ml engineer developer</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="resume">upload resume</label><br>
+                    <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="cover letter">cover letter</label><br>
+                    <textarea name="coverletter" id="coverletter" rows="5" required placeholder="Explain what makes you suitable for the job..""></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="terms"></label><br>
+                    <input type="checkbox" id="terms" name="terms">
+                    i agree to terms and condition
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="Submit application">
+                </div>
+
+            </form>
+        </div>
+        <div id="footer">
+            <ul id="footerlinks">
+                <li>
+                    <a href="https://jovian.com/sydney/html-and-css-basics">
+                        Courses
+                    </a>
+                </li>
+                <li>
+                    <a href="https://jovian.com/sydney/html-and-css-basics">
+                        Programs
+                    </a>
+                </li>
+                <li>
+                    <a href="https://jovian.com/sydney/html-and-css-basics">
+                        Youtube
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div style="text-align: center; color:rgb(120, 113, 108);">© Copyright jovian limited</div>
+    </div>
+
+</body>
+
+</html>
